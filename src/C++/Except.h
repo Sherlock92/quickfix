@@ -26,8 +26,8 @@
 #define NOEXCEPT noexcept
 #define EXCEPT(...) noexcept(false)
 #else
-#define NOEXCEPT throw()
-#define EXCEPT(...) throw(__VA_ARGS__)
+#define NOEXCEPT noexcept
+#define EXCEPT(...) noexcept(false)
 #endif
 
 #endif
